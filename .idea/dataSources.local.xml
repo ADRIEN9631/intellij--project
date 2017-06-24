@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="student@localhost" uuid="7b0f3d37-3f21-478a-a60c-2b57736ac6d6">
+      <database-info product="Microsoft SQL Server" version="12.00.2000" jdbc-version="3.0" driver-name="jTDS Type 4 JDBC Driver for MS SQL Server and Sybase" driver-version="1.3.1">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>getupdown</user-name>
+      <introspection-schemas>student:dbo</introspection-schemas>
+    </data-source>
+    <data-source name="web:WEB-INF:classes:hibernate.cfg.xml/Hibernate" uuid="04b46a04-9fcf-4a79-ad70-0e18d4d07314">
+      <database-info product="Microsoft SQL Server" version="12.00.2000" jdbc-version="4.0" driver-name="Microsoft JDBC Driver 4.0 for SQL Server" driver-version="4.0.2206.100">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>sa</user-name>
+      <introspection-schemas>student:dbo</introspection-schemas>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="96811b18-d89b-4292-91c0-2ea95c2b0aea">
+      <database-info product="Microsoft SQL Server" version="12.00.2000" jdbc-version="4.0" driver-name="Microsoft JDBC Driver 4.0 for SQL Server" driver-version="4.0.2206.100">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <user-name>sa</user-name>
+      <introspection-schemas>student:dbo</introspection-schemas>
+    </data-source>
+  </component>
+</project>

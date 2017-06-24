@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <package name="org.aciton" extends="struts-default">
+        <action name="login" class="org.aciton.UserLogin">
+            <result name="studentloginsuccess">/studentlogined.jsp</result>
+            <result name="teacherloginsuccess">/teacherlogined.jsp</result>
+            <result name="administorloginsuccess">/adminlogined.jsp</result>
+            <result name="success">/index.jsp</result>
+            <result name="error">/login.jsp</result>
+            <result name="input">/login.jsp</result>
+            <allowed-methods>studentlogin,teacherlogin,administorlogin</allowed-methods>
+        </action>
+        <action name="selectcourse" class="org.aciton.selectcourse">
+            <result name="success">/studentlogined.jsp</result>
+            <result name="error">/studentlogined.jsp</result>
+        </action>
+        <action name="searchcourse" class="org.aciton.SearchCourse">
+            <result name="success">/studentlogined.jsp</result>
+            <result name="error">/studentlogined.jsp</result>
+        </action>
+        <action name="SearchSC" class="org.aciton.SearchSC">
+            <result name="success">/studentlogined.jsp</result>
+            <result name="error">/studentlogined.jsp</result>
+        </action>
+        <action name="createcourse" class="org.aciton.createcourse">
+            <result name="success">/teacherlogined.jsp</result>
+            <result name="error">/teacherlogined.jsp</result>
+        </action>
+        <action name="TSearchC" class="org.aciton.tsearchc">
+            <result name="success">/teacherlogined.jsp</result>
+            <result name="error">/teacherlogined.jsp</result>
+        </action>
+        <action name="CSearchS" class="org.aciton.CSearchS">
+            <result name="success">/teacherlogined.jsp</result>
+            <result name="error">/teacherlogined.jsp</result>
+            <allowed-methods>saveop</allowed-methods>
+        </action>
+        <action name="adminselectcourse" class="org.aciton.selectcourse">
+            <result name="success">/adminlogined.jsp</result>
+            <result name="error">/adminlogined.jsp</result>
+        </action>
+        <action name="deletecourse" class="org.aciton.DeleteCourse">
+            <result name="success">/adminlogined.jsp</result>
+            <result name="error">/adminlogined.jsp</result>
+            <allowed-methods>deleteCRSC</allowed-methods>
+        </action>
+        <action name="createstu" class="org.aciton.CreateStu">
+            <result name="success">/adminlogined.jsp</result>
+            <result name="error">/adminlogined.jsp</result>
+        </action>
+        <action name="deletestu" class="org.aciton.DeleteStu">
+            <result name="success">/adminlogined.jsp</result>
+            <result name="error">/adminlogined.jsp</result>
+        </action>
+        <action name="deleteteacher" class="org.aciton.DeleteTeacher">
+            <result name="success">/adminlogined.jsp</result>
+            <result name="error">/adminlogined.jsp</result>
+            <allowed-methods>deleteTRC</allowed-methods>
+        </action>
+        <action name="createteacher" class="org.aciton.CreateTeacher">
+            <result name="success">/adminlogined.jsp</result>
+            <result name="error">/adminlogined.jsp</result>
+        </action>
+    </package>
+</struts>
